@@ -10,11 +10,11 @@ block content
       .content.center-vertical
         img.knowit_logo(src="img/knowit_logo.png" alt="KNOWIT")
 
-        h5 LEDIG STILLING
+        h5 LEDIGE STILLINGER
 
         h1 #{title}
 
-        .arrow.fa.fa-angle-down
+        .arrow.fa.fa-angle-down(onclick="scrollToPage('.hva-ser-vi-etter')")
 
   section.hva-ser-vi-etter
     .content.center-vertical
@@ -53,7 +53,46 @@ block content
           a(href=soknad_link target="_blank") SEND INN DIN SØKNAD
 
 
-      .arrow.fa.fa-angle-down
+      .arrow.fa.fa-angle-down(onclick="scrollToPage('.i-tillegg')")
+
+  section.i-tillegg
+    .content
+      h1 I tillegg kan vi tilby deg:
+      h5 LÆR MER &amp; TA DEL
+      .row
+        .col-xs-6.col-md-4
+          .tillegg-box
+            .icon.fa.fa-map-marker
+            h5 LOKASJON
+            .box.text-small Lokaler midt i Oslo sentrum!
+        .col-xs-6.col-md-4
+          .tillegg-box
+            .icon.glyphicon.glyphicon-blackboard
+            h5 KURSING
+            .box.text-small Vi holder kurs internt og reiser verden rundt for å bli bedre på det vi gjør.
+        .col-xs-6.col-md-4
+          .tillegg-box
+            .icon.fa.fa-balance-scale
+            h5 TVERFAGLIG MILJØ
+            .box.text-small Hos oss jobber vi på tvers av strategi, design og utvikling.
+
+        .col-xs-6.col-md-4
+          .tillegg-box
+            .icon.fa.fa-plane
+            h5 ÅRLIGE FAGTURER
+            .box.text-small To ganger i året holder vi seminar og drar avgårde på fagtur.
+        .col-xs-6.col-md-4
+          .tillegg-box
+            .icon.glyphicon.glyphicon-education
+            h5 STERKT FAGMILJØ
+            .box.text-small Lær sammen med andre. Du kan jobbe med flere kloke hoder.
+        .col-xs-6.col-md-4
+          .tillegg-box
+            .icon.fa.fa-beer
+            h5 ETTER JOBB
+            .box.text-small Vi har aktiviteter fra dronebygging til øl-brygging.
+      .arrow-dark.fa.fa-angle-down(onclick="scrollToPage('.slik-er-det')")
+
 
   section.slik-er-det
     .content
@@ -64,6 +103,7 @@ block content
         .h_iframe
           img.ratio(src="img/16x9.png")
           iframe(src="https://www.youtube.com/embed/gK5JeMgosSI" frameborder="0" allowfullscreen)
+      .arrow-dark.fa.fa-angle-down(onclick="scrollToPage('.bli-med')")
 
   section.bli-med
     .content
@@ -80,6 +120,7 @@ block content
             img.img-responsive(src="img/prosjekter.png" alt="WEBAPPS")
           .item
             img.img-responsive(src="img/prosjekter.png" alt="TJENESTER")
+      .arrow-dark.fa.fa-angle-down(onclick="scrollToPage('.vi-er-stolte-av')")
 
   section.vi-er-stolte-av
     .content
@@ -129,44 +170,7 @@ block content
       a.right.carousel-control(href="#folk-carousel" role="button" data-slide="next")
         span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
         span.sr-only NEXT
-
-
-  section.i-tillegg
-    .content
-      h1 I tillegg kan vi tilby deg:
-      h5 LÆR MER &amp; TA DEL
-      .row
-        .col-xs-6.col-md-4
-          .tillegg-box
-            .icon.fa.fa-map-marker
-            h5 LOKASJON
-            .box.text-small Lokaler midt i Oslo sentrum!
-        .col-xs-6.col-md-4
-          .tillegg-box
-            .icon.glyphicon.glyphicon-blackboard
-            h5 KURSING
-            .box.text-small Vi holder kurs internt og reiser verden rundt for å bli bedre på det vi gjør.
-        .col-xs-6.col-md-4
-          .tillegg-box
-            .icon.fa.fa-balance-scale
-            h5 TVERFAGLIG MILJØ
-            .box.text-small Hos oss jobber vi på tvers av strategi, design og utvikling.
-
-        .col-xs-6.col-md-4
-          .tillegg-box
-            .icon.fa.fa-plane
-            h5 ÅRLIGE FAGTURER
-            .box.text-small To ganger i året holder vi seminar og drar avgårde på fagtur.
-        .col-xs-6.col-md-4
-          .tillegg-box
-            .icon.glyphicon.glyphicon-education
-            h5 STERKT FAGMILJØ
-            .box.text-small Lær sammen med andre. Du kan jobbe med flere kloke hoder.
-        .col-xs-6.col-md-4
-          .tillegg-box
-            .icon.fa.fa-beer
-            h5 ETTER JOBB
-            .box.text-small Vi har aktiviteter fra dronebygging til øl-brygging.
+      .arrow-dark.fa.fa-angle-down(onclick="scrollToPage('.dette-er-oss')")
 
   section.dette-er-oss
     .content
